@@ -1,4 +1,4 @@
-# ai一听 - 基于JSP+MySQL的在线音乐播放系统
+# 一听 - 基于JSP+MySQL的在线音乐播放系统
 一个基于 **JSP + Servlet + MySQL** 开发的传统Java Web在线音乐平台，为用户提供完整的音乐播放、歌单管理、歌手分类等功能，适合作为Java Web课程设计或毕业设计项目。
 
 ---
@@ -19,27 +19,23 @@
 
 ---
 
-## 📸 项目预览
-### 🔐 登录注册
+##  项目预览
+###  登录注册
 
 
-### 🎬 首页与播放
-| 首页歌单推荐 | 黑胶播放界面 |
-|--------------|--------------|
-|![Uploading 微信图片_20260402143310_1_79.jpg…]()
+###  首页与播放
 
-|
-![Uploading 微信图片_20260402143311_2_79.jpg…]()
 
-### ❤️ 我的喜欢与歌手分类
-| 我的喜欢 | 歌手分类 |
-|----------|----------|
-|
-|
+
+
+###  我的喜欢与歌手分类
+
+
+
 
 ---
 
-## 🛠️ 技术栈
+##  技术栈
 ### 后端技术
 - **核心框架**：JSP + Servlet
 - **数据库**：MySQL 8.0+
@@ -66,31 +62,37 @@
 2.  执行项目根目录下的 `sql/ai_music.sql` 脚本，初始化表结构和测试数据
     ```sql
     -- 核心表结构示例
-    CREATE TABLE `user` (
-      `id` INT PRIMARY KEY AUTO_INCREMENT,
-      `username` VARCHAR(50) NOT NULL UNIQUE,
-      `nickname` VARCHAR(50) NOT NULL,
-      `email` VARCHAR(100) NOT NULL UNIQUE,
-      `password` VARCHAR(100) NOT NULL,
-      `create_time` DATETIME DEFAULT CURRENT_TIMESTAMP
-    );
-    
-    CREATE TABLE `music` (
-      `id` INT PRIMARY KEY AUTO_INCREMENT,
-      `name` VARCHAR(100) NOT NULL,
-      `singer` VARCHAR(50) NOT NULL,
-      `album` VARCHAR(100),
-      `duration` INT NOT NULL,
-      `url` VARCHAR(255) NOT NULL,
-      `cover` VARCHAR(255)
-    );
-    
+ -- 用户表
+CREATE TABLE User (
+    id INT PRIMARY KEY AUTO_INCREMENT COMMENT '用户ID',
+    username VARCHAR(50) NOT NULL COMMENT '用户名',
+    password VARCHAR(255) NOT NULL COMMENT '用户密码',
+    nickname VARCHAR(50) NOT NULL COMMENT '昵称',
+    email VARCHAR(100) NOT NULL COMMENT '邮箱',
+    avatar VARCHAR(255) COMMENT '头像',
+    resume VARCHAR(255) COMMENT '简历',
+    createtime DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    updatetime DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间'
+);
+
+-- 歌手表
+CREATE TABLE Singer (
+    id INT PRIMARY KEY AUTO_INCREMENT COMMENT '歌手ID',
+    singerName VARCHAR(100) NOT NULL COMMENT '歌手名称',
+    type INT COMMENT '类型(1:男歌手,2:女歌手,3:组合/乐队)',
+    birthday DATE COMMENT '生日',
+    nationality VARCHAR(50) COMMENT '国籍',
+    resume VARCHAR(255) COMMENT '简历',
+    avatar VARCHAR(255) COMMENT '头像',
+    createtime DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    updatetime DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
+);
     -- 更多表结构详见sql脚本
     ```
 3.  修改 `src/main/resources/db.properties` 中的数据库连接信息
     ```properties
     jdbc.driver=com.mysql.cj.jdbc.Driver
-    jdbc.url=jdbc:mysql://localhost:3306/ai_music?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    jdbc.url=jdbc:mysql://localhost:3306/yt_music
     jdbc.username=root
     jdbc.password=你的数据库密码
     ```
@@ -102,14 +104,13 @@
 4.  启动Tomcat，访问 `http://localhost:8080/ai-yi-ting/` 即可进入系统
 
 ### 3. 测试账号
-- 测试账号：`TEST3`
-- 测试密码：`123456`（可自行注册新账号）
+自己注册+登入
 
 ---
 
-## 📂 项目结构
+##  项目结构
 ```
-ai-yi-ting/
+yt_music/
 ├── src/main/
 │   ├── java/com/aiyiting/
 │   │   ├── controller/      # Servlet控制器（登录、注册、播放、歌单等）
@@ -126,14 +127,13 @@ ai-yi-ting/
 │       ├── music/           # 音乐文件
 │       ├── pages/           # JSP页面（登录、首页、播放页等）
 │       └── WEB-INF/         # web.xml配置
-├── sql/                     # 数据库初始化脚本
 ├── pom.xml                  # Maven依赖配置（可选）
 └── README_ZH.md
 ```
 
 ---
 
-## 🎯 功能模块详解
+##  功能模块详解
 ### 1. 用户认证系统
 - **注册**：用户名、昵称、邮箱验证码、密码双重校验，防止恶意注册
 - **登录**：用户名+密码登录，Session存储登录状态，自动登录持久化
@@ -160,7 +160,7 @@ ai-yi-ting/
 
 ---
 
-## 📝 后续迭代计划
+##  后续迭代计划
 - [ ] 接入真实音乐API，实现海量曲库在线播放
 - [ ] 完善智能AI功能：AI歌单推荐、AI点歌、AI生成歌单
 - [ ] 增加歌词显示、逐字滚动、翻译功能
@@ -171,7 +171,7 @@ ai-yi-ting/
 
 ---
 
-## 🤝 贡献指南
+## 贡献指南
 欢迎提交Issue和Pull Request来完善项目！
 1.  Fork 本仓库
 2.  创建特性分支 (`git checkout -b feature/AmazingFeature`)
@@ -181,17 +181,17 @@ ai-yi-ting/
 
 ---
 
-## 📄 许可证
+## 许可证
 本项目基于 [MIT License](LICENSE) 开源，可自由使用、修改和分发。
 
 ---
 
-## 🙏 致谢
+## 致谢
 感谢JSP/Servlet、MySQL、Tomcat等开源技术的支持，以及所有为项目提供帮助的开发者！
 
 ---
 
-## 📞 联系我
+##  联系我
 如有问题或建议，欢迎通过以下方式联系：
 - 邮箱：3588172935@qq.com
 - GitHub：[你的GitHub主页]
