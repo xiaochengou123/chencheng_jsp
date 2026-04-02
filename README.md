@@ -61,8 +61,7 @@
 1.  创建数据库 `ai_music`（字符集 `utf8mb4`，排序规则 `utf8mb4_general_ci`）
 2.  执行项目根目录下的 `sql/ai_music.sql` 脚本，初始化表结构和测试数据
     ```sql
-    -- 核心表结构示例
- -- 用户表
+     -- 用户表
 CREATE TABLE User (
     id INT PRIMARY KEY AUTO_INCREMENT COMMENT '用户ID',
     username VARCHAR(50) NOT NULL COMMENT '用户名',
@@ -87,6 +86,8 @@ CREATE TABLE Singer (
     createtime DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     updatetime DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
 );
+    -- 核心表结构示例
+
     -- 更多表结构详见sql脚本
     ```
 3.  修改 `src/main/resources/db.properties` 中的数据库连接信息
