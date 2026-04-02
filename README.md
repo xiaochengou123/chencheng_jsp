@@ -86,6 +86,7 @@ CREATE TABLE Singer (
     createtime DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     updatetime DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
 );
+```
     -- 核心表结构示例
 
     -- 更多表结构详见sql脚本
