@@ -10,11 +10,35 @@
 | :--- | :--- | :--- |
 | **测试用户** | `yt` | `yt_music_123456` |
 <span style="color: red;">注意:管理员为了更好的管理，暂时关闭了注册功能，你想体验注册功能的话:下载压缩包</span>
-### 登入页面
+### 登入
 <img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143311_2_79.jpg" width="800px" />
 
-### 注册页面
+### 注册
 <img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143310_1_79.jpg" width="800px"/>
+
+### 首页
+<img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143313_4_79.jpg" width="800px"/>
+
+### 喜欢
+<img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143314_6_79.jpg" width="800px"/>
+
+### 歌手分类
+<img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143316_9_79.jpg" width="800px"/>
+
+### 歌手详情
+<img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143318_11_79.jpg" width="800px"/>
+
+### 一听ai
+<img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143319_12_79.jpg" width="800px"/>
+
+### 播放
+<img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143319_13_79.jpg" width="800px"/>
+
+### 歌单详情
+<img src="https://javaai45.oss-cn-beijing.aliyuncs.com/Snipaste_2026-04-03_13-34-24.png" width="800px"/>
+
+
+
 ## 数据库ER图（实体-关系图）
 <img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143320_14_79.jpg" width="800px"/>
 
