@@ -2,6 +2,8 @@
 ## 项目介绍
 本项目是基于 **JSP + Servlet + MySQL** 开发的 Java Web 音乐播放平台，主要用于实现用户在线听歌、歌曲收藏、歌手分类、个人歌单、ai系统管理等功能，适合作为课程设计、毕业设计或 Java Web 入门实战项目，帮助学习前后端交互、数据库操作及 Web 项目完整开发流程。
 ## 项目演示
+项目在线测试地址**这是加粗的文本**
+
 ### 登入页面
 <img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143311_2_79.jpg" width="800px" />
 
