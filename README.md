@@ -111,9 +111,6 @@
    
    [http://localhost:8080/你的项目名/Player.jsp](http://localhost:8080/你的项目名/Player.jsp)
 
-   ## 下个版本
-<video width="800" controls>
-  <source src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.0.mp4" type="video/mp4">
-  您的浏览器不支持视频播放，请<a href="https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.0.mp4">点击下载</a>查看
-</video>
+   ## 后续版本演示
+[![项目演示](https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143313_4_79.jpg)](https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.0.mp4)
    
