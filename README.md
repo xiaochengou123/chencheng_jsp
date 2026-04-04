@@ -111,7 +111,5 @@
    
    [http://localhost:8080/你的项目名/Player.jsp](http://localhost:8080/你的项目名/Player.jsp)
 
-   ## 后续版本演示
-   ## 后续版本演示
-[![项目演示](https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.png)]
-(https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.0.mp4)
+## 后续版本演示
+[![项目演示](https://javaai45.oss-cn-beijing.com/%E7%89%88%E6%9C%AC2.png)](https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.0.mp4)
