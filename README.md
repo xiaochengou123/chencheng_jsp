@@ -1,6 +1,7 @@
  # 音乐播放管理系统
 ## 项目介绍
 本项目是基于 **JSP + Servlet + MySQL** 开发的 Java Web 音乐播放平台，主要用于实现用户在线听歌、歌曲收藏、歌手分类、个人歌单、ai系统管理等功能，适合作为课程设计、毕业设计或 Java Web 入门实战项目，帮助学习前后端交互、数据库操作及 Web 项目完整开发流程。
+
 ## 项目演示
 
 ###  测试账号信息
@@ -109,4 +110,7 @@
    打开浏览器，访问以下地址（端口号请根据您的 Tomcat 配置调整）：
    
    [http://localhost:8080/你的项目名/Player.jsp](http://localhost:8080/你的项目名/Player.jsp)
+
+   ## 下个版本
+[演示视频 2.0](sslocal://flow/file_open?url=https%3A%2F%2Fjavaai45.oss-cn-beijing.aliyuncs.com%2F%25E7%2589%2588%25E6%259C%25AC2.0.mp4&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)
    
