@@ -11,7 +11,7 @@
  Target Server Version : 80042 (8.0.42)
  File Encoding         : 65001
 
- Date: 15/01/2026 10:31:29
+ Date: 04/04/2026 18:05:13
 */
 
 SET NAMES utf8mb4;
@@ -28,7 +28,7 @@ CREATE TABLE `aianswer`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `user_id`(`user_id` ASC) USING BTREE,
   CONSTRAINT `aianswer_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of aianswer
@@ -97,14 +97,6 @@ CREATE TABLE `mylike`  (
 -- ----------------------------
 -- Records of mylike
 -- ----------------------------
-INSERT INTO `mylike` VALUES (1, 1, 1, 1, '2026-01-12 18:00:24');
-INSERT INTO `mylike` VALUES (3, 1, 2, 2, '2026-01-13 10:32:27');
-INSERT INTO `mylike` VALUES (4, 1, 1, 2, '2026-01-14 08:48:13');
-INSERT INTO `mylike` VALUES (5, 1, 2, 1, '2026-01-14 08:50:12');
-INSERT INTO `mylike` VALUES (6, 23, 1, 1, '2026-01-15 09:33:16');
-INSERT INTO `mylike` VALUES (7, 25, 1, 3, '2026-01-15 09:39:56');
-INSERT INTO `mylike` VALUES (8, 25, 2, 1, '2026-01-15 09:39:58');
-INSERT INTO `mylike` VALUES (9, 25, 1, 1, '2026-01-15 09:40:44');
 
 -- ----------------------------
 -- Table structure for singer
@@ -161,32 +153,32 @@ CREATE TABLE `song`  (
 -- ----------------------------
 -- Records of song
 -- ----------------------------
-INSERT INTO `song` VALUES (1, '七里香', '4:59', '七里香', '2004-08-03', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/be6ac1ed-c852-4400-87e6-5bdd12f5724d.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E4%B8%83%E9%87%8C%E9%A6%99_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (2, '青花瓷', '3:59', '我很忙', '2007-11-02', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/12d167d1-0208-4e0d-83a9-53a0a89c2a09.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E9%9D%92%E8%8A%B1%E7%93%B7_kgg-dec.mp3', '中国风');
-INSERT INTO `song` VALUES (3, '泡沫', '4:18', 'Xposed', '2012-07-05', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/1ff17d02-63c9-4246-9138-7029f7504c3a.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/G.E.M.%20%E9%82%93%E7%B4%AB%E6%A3%8B%20-%20%E6%B3%A1%E6%B2%AB.mp3', '流行');
-INSERT INTO `song` VALUES (4, '光年之外', '3:55', '单曲', '2016-12-30', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/cda0fece-a15e-4f7c-ac31-9c1e55d3b497.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/G.E.M.%20%E9%82%93%E7%B4%AB%E6%A3%8B%20-%20%E5%85%89%E5%B9%B4%E4%B9%8B%E5%A4%96.mp3', '流行');
-INSERT INTO `song` VALUES (5, 'Super Star', '3:16', 'Super Star', '2003-08-22', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/e6665bf3-856d-461a-928b-b99bfd797f96.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/S.H.E%20-%20Super%20Star_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (6, '青春修炼手册', '4:23', '青春修炼手册', '2014-07-24', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/3e43ed6a-6160-4a75-b44e-ffb8397e4287.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/TFBOYS%20-%20%E9%9D%92%E6%98%A5%E4%BF%AE%E7%82%BC%E6%89%8B%E5%86%8C_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (7, '天黑黑', '3:56', '孙燕姿同名专辑', '2000-06-09', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/dc66ff92-a0d7-4c47-ae07-e92deadf7640.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E5%A4%A9%E9%BB%91%E9%BB%91_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (8, '开始懂了', '4:31', '我要的幸福', '2000-12-07', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/69d1c52c-4f0c-45ef-900f-2b22419a731a.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E5%BC%80%E5%A7%8B%E6%87%82%E4%BA%86_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (9, 'K歌之王', '3:42', 'The Easy Ride', '2002-07-24', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/63c58842-f652-41db-aa47-b5059a755742.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E9%99%88%E5%A5%95%E8%BF%85%20-%20K%E6%AD%8C%E4%B9%8B%E7%8E%8B%20%28%E6%99%AE%E9%80%9A%E8%AF%9D%E7%89%88%29_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (10, '浮夸', '4:43', 'U87', '2005-06-07', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/77257c05-b1b9-4771-ab35-6a3511e7249d.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E9%99%88%E5%A5%95%E8%BF%85%20-%20%E6%B5%AE%E5%A4%B8_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (11, '倔强', '4:21', '神的孩子都在跳舞', '2004-11-05', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/d7b09a9d-5b8a-41e8-bdba-5cc8e242eef7.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E4%BA%94%E6%9C%88%E5%A4%A9%20-%20%E5%80%94%E5%BC%BA_kgg-dec.mp3', '摇滚');
-INSERT INTO `song` VALUES (12, '小情歌', '4:33', '小宇宙', '2006-10-20', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/f3c560d4-1a76-4487-9131-9863b9ab5e95.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E8%8B%8F%E6%89%93%E7%BB%BF%20-%20%E5%B0%8F%E6%83%85%E6%AD%8C.mp3', '独立摇滚');
-INSERT INTO `song` VALUES (13, '我好想你', '5:29', '秋：故事', '2013-09-18', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/8d1b4391-67f8-4054-9870-fcb5e2f75435.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E8%8B%8F%E6%89%93%E7%BB%BF%20-%20%E6%88%91%E5%A5%BD%E6%83%B3%E4%BD%A0%20%28%E8%8B%8F%E6%89%93%E7%BB%BF%E7%89%88%29.mp3', '流行');
-INSERT INTO `song` VALUES (14, '演员', '4:21', '绅士', '2015-05-20', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/fcd6e0bf-612f-4395-983d-08e0ad3d40df.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E8%96%9B%E4%B9%8B%E8%B0%A6%20-%20%E6%BC%94%E5%91%98.mp3', '流行');
-INSERT INTO `song` VALUES (15, '绅士', '4:50', '绅士', '2015-05-20', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/d7dc86d6-636e-4673-b684-7e311b5627fb.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E8%96%9B%E4%B9%8B%E8%B0%A6%20-%20%E7%BB%85%E5%A3%AB_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (16, '江南', '4:27', '第二天堂', '2004-06-04', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/5b0ff358-5953-4c0c-9059-e7a0cff2a694.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E6%B1%9F%E5%8D%97_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (17, '修炼爱情', '4:47', '因你而在', '2013-03-13', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/fde57563-b5e5-4099-b2c3-02220bdcd552.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E4%BF%AE%E7%82%BC%E7%88%B1%E6%83%85_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (18, '他不懂', '3:51', 'One Chance', '2012-08-01', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/4b9bc77f-f94b-4756-9afd-14371772badb.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%BC%A0%E6%9D%B0%20-%20%E4%BB%96%E4%B8%8D%E6%87%82.mp3', '流行');
-INSERT INTO `song` VALUES (19, '逆战', '3:44', '单曲', '2012-04-09', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/18dfb0e8-e1b8-44a7-8596-945ff6351fc4.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026/%E6%AD%8C%E6%9B%B2/%E9%80%86%E6%88%98.mp3', '流行');
-INSERT INTO `song` VALUES (20, '鹿 Be Free', '3:43', 'Black & White', '2013-10-21', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/f78a4080-5290-44dc-9c62-0f148a0afa31.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%B0%9A%E9%9B%AF%E5%A9%95%20-%20%E9%B9%BF%20be%20free.mp3', '电子流行');
-INSERT INTO `song` VALUES (21, '一笑倾城', '3:51', '登陆计划', '2016-08-15', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/84d113dd-c0ce-45d0-a582-35100ec70537.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E6%B1%AA%E8%8B%8F%E6%B3%B7%20-%20%E4%B8%80%E7%AC%91%E5%80%BE%E5%9F%8E_kgg-dec.mp3', '流行');
-INSERT INTO `song` VALUES (22, '有点甜', '3:55', '万有引力', '2012-07-16', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/46006e1d-bcfc-464c-b629-5f3d9441bdba.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026/%E6%AD%8C%E6%9B%B2/%E6%9C%89%E7%82%B9%E7%94%9C.mp3', '流行');
-INSERT INTO `song` VALUES (23, '大鱼', '5:13', '大鱼', '2016-05-20', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/d3470552-3196-48d5-90bc-5ca8d9c7a58c.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%91%A8%E6%B7%B1%20-%20%E5%A4%A7%E9%B1%BC_kgg-dec.mp3', '影视原声');
-INSERT INTO `song` VALUES (24, '小美满', '3:34', '小美满', '2024-02-06', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/7fb3d977-8c34-41ac-9299-a1615d3a81b1.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%91%A8%E6%B7%B1%20-%20%E5%B0%8F%E7%BE%8E%E6%BB%A1.mp3', '流行');
-INSERT INTO `song` VALUES (25, '最炫民族风', '4:44', '最炫民族风', '2009-05-27', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/fc9b9163-f0da-4edb-bb3d-2ead874fd38b.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%87%A4%E5%87%B0%E4%BC%A0%E5%A5%87%20-%20%E6%9C%80%E7%82%AB%E6%B0%91%E6%97%8F%E9%A3%8E%281%29_kgg-dec.mp3', '民族流行');
-INSERT INTO `song` VALUES (26, '月亮之上', '3:55', '月亮之上', '2005-04-01', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/d3e4f978-e4eb-4029-90b0-3d29427afaf7.png', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/audio/2026_1/audio.worthsee.com/%E5%87%A4%E5%87%B0%E4%BC%A0%E5%A5%87%20-%20%E6%9C%88%E4%BA%AE%E4%B9%8B%E4%B8%8A_kgg-dec.mp3', '民族流行');
+INSERT INTO `song` VALUES (1, '七里香', '4:59', '七里香', '2004-08-03', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E4%B8%83%E9%87%8C%E9%A6%99.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E4%B8%83%E9%87%8C%E9%A6%99%20%282%29.mp3', '流行');
+INSERT INTO `song` VALUES (2, '青花瓷', '3:59', '我很忙', '2007-11-02', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E9%9D%92%E8%8A%B1%E7%93%B7.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E9%9D%92%E8%8A%B1%E7%93%B7.mp3', '中国风');
+INSERT INTO `song` VALUES (3, '泡沫', '4:18', 'Xposed', '2012-07-05', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E6%B3%A1%E6%B2%AB.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E6%B3%A1%E6%B2%AB_%E9%82%93%E7%B4%AB%E6%A3%8B.mp3', '流行');
+INSERT INTO `song` VALUES (4, '光年之外', '3:55', '单曲', '2016-12-30', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E5%85%89%E5%B9%B4%E4%B9%8B%E5%A4%96.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E5%85%89%E5%B9%B4%E4%B9%8B%E5%A4%96.mp3', '流行');
+INSERT INTO `song` VALUES (5, 'Super Star', '3:16', 'Super Star', '2003-08-22', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/Super%20Star.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/Super%20Star.mp3', '流行');
+INSERT INTO `song` VALUES (6, '青春修炼手册', '4:23', '青春修炼手册', '2014-07-24', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E9%9D%92%E6%98%A5%E4%BF%AE%E7%82%BC%E6%89%8B%E5%86%8C%27.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E9%9D%92%E6%98%A5%E4%BF%AE%E7%82%BC%E6%89%8B%E5%86%8C.mp3', '流行');
+INSERT INTO `song` VALUES (7, '天黑黑', '3:56', '孙燕姿同名专辑', '2000-06-09', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E5%A4%A9%E9%BB%91%E9%BB%91.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E5%A4%A9%E9%BB%91%E9%BB%91.mp3', '流行');
+INSERT INTO `song` VALUES (8, '开始懂了', '4:31', '我要的幸福', '2000-12-07', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E5%BC%80%E5%A7%8B%E6%87%82%E4%BA%86.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E5%BC%80%E5%A7%8B%E6%87%82%E4%BA%86.mp3', '流行');
+INSERT INTO `song` VALUES (9, 'K歌之王', '3:42', 'The Easy Ride', '2002-07-24', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/K%E6%AD%8C%E4%B9%8B%E7%8E%8B.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/K%E6%AD%8C%E4%B9%8B%E7%8E%8B.mp3', '流行');
+INSERT INTO `song` VALUES (10, '浮夸', '4:43', 'U87', '2005-06-07', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E6%B5%AE%E5%A4%B8.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E6%B5%AE%E5%A4%B8.mp3', '流行');
+INSERT INTO `song` VALUES (11, '倔强', '4:21', '神的孩子都在跳舞', '2004-11-05', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E5%80%94%E5%BC%BA.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E5%80%94%E5%BC%BA.mp3', '摇滚');
+INSERT INTO `song` VALUES (12, '小情歌', '4:33', '小宇宙', '2006-10-20', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E5%B0%8F%E6%83%85%E6%AD%8C.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E5%B0%8F%E6%83%85%E6%AD%8C.mp3', '独立摇滚');
+INSERT INTO `song` VALUES (13, '我好想你', '5:29', '秋：故事', '2013-09-18', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E6%88%91%E5%A5%BD%E6%83%B3%E4%BD%A0.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E6%88%91%E5%A5%BD%E6%83%B3%E4%BD%A0.mp3', '流行');
+INSERT INTO `song` VALUES (14, '演员', '4:21', '绅士', '2015-05-20', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E6%BC%94%E5%91%98.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E6%BC%94%E5%91%98.mp3', '流行');
+INSERT INTO `song` VALUES (15, '绅士', '4:50', '绅士', '2015-05-20', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E7%BB%85%E5%A3%AB.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E7%BB%85%E5%A3%AB.mp3', '流行');
+INSERT INTO `song` VALUES (16, '江南', '4:27', '第二天堂', '2004-06-04', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E6%B1%9F%E5%8D%97.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E6%B1%9F%E5%8D%97.mp3', '流行');
+INSERT INTO `song` VALUES (17, '修炼爱情', '4:47', '因你而在', '2013-03-13', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E4%BF%AE%E7%82%BC%E7%88%B1%E6%83%85.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E4%BF%AE%E7%82%BC%E7%88%B1%E6%83%85.mp3', '流行');
+INSERT INTO `song` VALUES (18, '他不懂', '3:51', 'One Chance', '2012-08-01', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E4%BB%96%E4%B8%8D%E6%87%82.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E4%BB%96%E4%B8%8D%E6%87%82.mp3', '流行');
+INSERT INTO `song` VALUES (19, '逆战', '3:44', '单曲', '2012-04-09', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E9%80%86%E6%88%98.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E9%80%86%E6%88%98.mp3', '流行');
+INSERT INTO `song` VALUES (20, '鹿 Be Free', '3:43', 'Black & White', '2013-10-21', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E9%B9%BF%20Be%20Free.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E9%B9%BF%20Be%20Free.mp3', '电子流行');
+INSERT INTO `song` VALUES (21, '一笑倾城', '3:51', '登陆计划', '2016-08-15', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E4%B8%80%E7%AC%91%E5%80%BE%E5%9F%8E.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E4%B8%80%E7%AC%91%E5%80%BE%E5%9F%8E.mp3', '流行');
+INSERT INTO `song` VALUES (22, '有点甜', '3:55', '万有引力', '2012-07-16', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E6%9C%89%E7%82%B9%E7%94%9C.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E6%9C%89%E7%82%B9%E7%94%9C.mp3', '流行');
+INSERT INTO `song` VALUES (23, '大鱼', '5:13', '大鱼', '2016-05-20', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E5%A4%A7%E9%B1%BC.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E5%A4%A7%E9%B1%BC.mp3', '影视原声');
+INSERT INTO `song` VALUES (24, '小美满', '3:34', '小美满', '2024-02-06', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E5%B0%8F%E7%BE%8E%E6%BB%A1.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E5%B0%8F%E7%BE%8E%E6%BB%A1.mp3', '流行');
+INSERT INTO `song` VALUES (25, '最炫民族风', '4:44', '最炫民族风', '2009-05-27', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E6%9C%80%E7%82%AB%E6%B0%91%E6%97%8F%E9%A3%8E.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E6%9C%80%E7%82%AB%E6%B0%91%E6%97%8F%E9%A3%8E.mp3', '民族流行');
+INSERT INTO `song` VALUES (26, '月亮之上', '3:55', '月亮之上', '2005-04-01', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/image/png%E5%9B%BE%E7%89%87/%E6%9C%88%E4%BA%AE%E4%B9%8B%E4%B8%8A.png', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/atuo/%E6%AD%8C%E6%9B%B2/%E6%9C%88%E4%BA%AE%E4%B9%8B%E4%B8%8A.mp3', '民族流行');
 
 -- ----------------------------
 -- Table structure for songlist
@@ -222,21 +214,21 @@ CREATE TABLE `songsheet`  (
 -- ----------------------------
 -- Records of songsheet
 -- ----------------------------
-INSERT INTO `songsheet` VALUES (1, '抖音热歌 | 火爆全网超好听', '火爆全网 听感满分！', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/bce34b7c-5b40-4466-861a-4cf22c6e6ee1.png');
-INSERT INTO `songsheet` VALUES (2, '抖音热歌：火爆全网 听感满分！', '国语热歌精选', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/1cbbc043-e335-44f5-9bf6-f178287709ff.png');
-INSERT INTO `songsheet` VALUES (3, '电量1%也要听！每一首都好听出圈', '伤感神曲合集', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/1370f50a-5ee9-43c6-8092-3c44ca549bd6.png');
-INSERT INTO `songsheet` VALUES (4, '抖音热歌丨潮流旋律感觉至上', '流行风格精选', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/3044f984-4547-4210-8028-d88393d9ae82.png');
-INSERT INTO `songsheet` VALUES (5, '车载DJ热歌：轻松一路Fun肆嗨！', 'DJ舞曲提神必备', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/f61a9d41-5fb3-4d14-b9bf-5d7440962ee3.png');
-INSERT INTO `songsheet` VALUES (6, '抖音热播单曲收录（持续更新）', '热门单曲持续更新', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/a9ce3180-3f2a-43a0-9985-4ea792cda9cc.png');
-INSERT INTO `songsheet` VALUES (7, '抖音伤感 : 你是我熬不过的苦', '深夜emo伤感情歌', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/f09af8ac-9fb5-4636-b8f4-f942da187a4b.png');
-INSERT INTO `songsheet` VALUES (8, '车内劲爆舞曲·快意疾驰引擎共鸣', '高速驾驶必备BGM', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/6a4fa6ed-d76f-4cbb-b7ea-918fc48669f2.png');
-INSERT INTO `songsheet` VALUES (9, '劲嗨炸街舞曲！竞速驰骋混响轰炸', '街头炸场DJ神曲', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/93a0534b-f10d-4138-b88b-776edf4858d4.png');
-INSERT INTO `songsheet` VALUES (10, 'DJ歌曲｜音响一开，烦恼不来', '释放压力的DJ节奏', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/53087b5e-5b13-4b34-9f25-41b0c278c033.png');
-INSERT INTO `songsheet` VALUES (11, '车载DJ丨提神醒脑，困意全无', '长途驾驶提神专用', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/8261f79a-c4f8-4f03-b753-419d2801ebf5.png');
-INSERT INTO `songsheet` VALUES (12, '假日车载DJ，一路欢歌回家', '节日返程欢乐歌单', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/d209f26f-742b-46e0-80d0-a60db2dacf6b.png');
-INSERT INTO `songsheet` VALUES (13, '一秒就落泪！深夜emo天花板情歌', '催泪情歌天花板', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/cbe400b9-375c-4a15-9acf-e6c060a3b8f9.png');
-INSERT INTO `songsheet` VALUES (14, '一听就落泪！哪首是emo天花板', '经典伤感情歌合集', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/73a27cfb-c87b-4f38-8f24-add0231f3d47.png');
-INSERT INTO `songsheet` VALUES (15, '伤感DJ系：遗忘是最好的解脱', '伤感+DJ融合曲风', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/a9454690-9aad-4dc5-98fb-0f7de0c0fa6a.png');
+INSERT INTO `songsheet` VALUES (1, '抖音热歌 | 火爆全网超好听', '火爆全网 听感满分！', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190201.png');
+INSERT INTO `songsheet` VALUES (2, '抖音热歌：火爆全网 听感满分！', '国语热歌精选', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190220.png');
+INSERT INTO `songsheet` VALUES (3, '电量1%也要听！每一首都好听出圈', '伤感神曲合集', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190234.png');
+INSERT INTO `songsheet` VALUES (4, '抖音热歌丨潮流旋律感觉至上', '流行风格精选', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190252.png');
+INSERT INTO `songsheet` VALUES (5, '车载DJ热歌：轻松一路Fun肆嗨！', 'DJ舞曲提神必备', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190301.png');
+INSERT INTO `songsheet` VALUES (6, '抖音热播单曲收录（持续更新）', '热门单曲持续更新', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190310.png');
+INSERT INTO `songsheet` VALUES (7, '抖音伤感 : 你是我熬不过的苦', '深夜emo伤感情歌', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190324.png');
+INSERT INTO `songsheet` VALUES (8, '车内劲爆舞曲·快意疾驰引擎共鸣', '高速驾驶必备BGM', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190333.png');
+INSERT INTO `songsheet` VALUES (9, '劲嗨炸街舞曲！竞速驰骋混响轰炸', '街头炸场DJ神曲', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190344.png');
+INSERT INTO `songsheet` VALUES (10, 'DJ歌曲｜音响一开，烦恼不来', '释放压力的DJ节奏', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190350.png');
+INSERT INTO `songsheet` VALUES (11, '车载DJ丨提神醒脑，困意全无', '长途驾驶提神专用', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190400.png');
+INSERT INTO `songsheet` VALUES (12, '假日车载DJ，一路欢歌回家', '节日返程欢乐歌单', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190426.png');
+INSERT INTO `songsheet` VALUES (13, '一秒就落泪！深夜emo天花板情歌', '催泪情歌天花板', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190434.png');
+INSERT INTO `songsheet` VALUES (14, '一听就落泪！哪首是emo天花板', '经典伤感情歌合集', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-04%20190500.png');
+INSERT INTO `songsheet` VALUES (15, '伤感DJ系：遗忘是最好的解脱', '伤感+DJ融合曲风', 'https://music-09.oss-cn-beijing.aliyuncs.com/mian/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260104165257_149_5.png');
 
 -- ----------------------------
 -- Table structure for songsheetsong
@@ -336,23 +328,11 @@ CREATE TABLE `user`  (
   `Key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '加密的字母',
   `Position` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '加密的位置',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 26 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 27 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, 'OOO', '923a846b4d104cc81db80871e84f6a5f', 'WWW', '205614780@qq.com', '1', '这个人很懒', '2026-01-12 17:56:57', '2026-01-12 17:56:57', 's', '0');
-INSERT INTO `user` VALUES (2, 'EEE', '4bdf8859c3ebc307c1aacf56f99e1311', 'EEE', '3588172935@qq.com', '1', '这个人很懒', '2026-01-12 19:13:37', '2026-01-12 19:13:37', 'h', '2');
-INSERT INTO `user` VALUES (4, 'WWW', '0bb7ec0bb37661e844bb046abe202466', 'WWW', '3588172935@qq.com', '1', '这个人很懒', '2026-01-12 19:23:38', '2026-01-12 19:23:38', 'r', '2');
-INSERT INTO `user` VALUES (6, 'III', '85780f4128e3c4d03cfab25e53dd1502', '一听', '205614780@qq.com', '1', '这个人很懒', '2026-01-13 14:15:17', '2026-01-13 22:16:06', 'a', '4');
-INSERT INTO `user` VALUES (7, 'TEST1', 'd4743b6ab72f17efad97f445f4bbbe55', '111', '205614780@qq.com', '1', '这个人很懒', '2026-01-13 14:21:43', '2026-01-13 22:16:11', 'j', '0');
-INSERT INTO `user` VALUES (8, 'TEXT2', '1288ef21276888012f8d756df9e735ed', 'SSS', '205614780@qq.com', '1', '这个人很懒', '2026-01-13 14:24:18', '2026-01-13 14:24:18', 'n', '2');
-INSERT INTO `user` VALUES (9, 'TTT', '7734b47686848f62268fd07b1f106734', '一听', '3588172935@qq.com', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/im…/2026/01/1370f50a-5ee9-43c6-8092-3c44ca549bd6.png', '这个人很懒', '2026-01-13 22:25:29', '2026-01-13 22:25:29', 'u', '1');
-INSERT INTO `user` VALUES (10, 'TTTT', '48066d3f5c727d2c3384562bb8ec18db', '一听', '3588172935@qq.com', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/im…/2026/01/1370f50a-5ee9-43c6-8092-3c44ca549bd6.png', '这个人很懒', '2026-01-13 22:31:46', '2026-01-13 22:31:46', 'w', '4');
-INSERT INTO `user` VALUES (14, 'TTTTT', 'b57bef5a2bc275610dc2a453f007f389', '一听', '3588172935@qq.com', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/im…/2026/01/1370f50a-5ee9-43c6-8092-3c44ca549bd6.png', '这个人很懒', '2026-01-13 22:37:02', '2026-01-13 22:37:02', 'p', '4');
-INSERT INTO `user` VALUES (15, 'test9', '750c6cbb338427a3829395c896b95f3f', '急急急', '3588172935@qq.com', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/im…/2026/01/1370f50a-5ee9-43c6-8092-3c44ca549bd6.png', '这个人很懒', '2026-01-13 22:40:03', '2026-01-13 22:40:03', 'o', '0');
-INSERT INTO `user` VALUES (16, 'T11', '5e5d61a837b291fc0905ff8a86e0ddcb', '急急急', '3588172935@qq.com', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/1370f50a-5ee9-43c6-8092-3c44ca549bd6.png', '这个人很懒', '2026-01-13 22:42:29', '2026-01-13 22:48:41', 'w', '2');
-INSERT INTO `user` VALUES (23, 'T12', '6e6306c58840a67891f20eccbc2417b5', 'WWW', '205614780@qq.com', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/1370f50a-5ee9-43c6-8092-3c44ca549bd6.png', '这个人很懒', '2026-01-15 09:32:51', '2026-01-15 09:32:51', 'k', '0');
-INSERT INTO `user` VALUES (25, 'test3', 'b0d562da6a885ee5a6ea2af16934ba6a', 'wwww', '3588172935@qq.com', 'https://movie-db-ai.oss-cn-beijing.aliyuncs.com/image/2026/01/1370f50a-5ee9-43c6-8092-3c44ca549bd6.png', '这个人很懒', '2026-01-15 09:39:21', '2026-01-15 09:39:21', 'w', '0');
+INSERT INTO `user` VALUES (1, 'root', '0E1A1003C2CA36EF18113192806E6744', '一听', 'yt_123456789@qq.com', '1', '这个人很懒', '2026-01-12 17:56:57', '2026-04-03 17:48:27', 'p', '0');
 
 SET FOREIGN_KEY_CHECKS = 1;
