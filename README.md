@@ -112,8 +112,5 @@
    [http://localhost:8080/你的项目名/Player.jsp](http://localhost:8080/你的项目名/Player.jsp)
 
    ## 后续版本演示
-## 后续版本演示
-<video width="800" controls>
-  <source src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.0.mp4" type="video/mp4">
-</video>
-   
+   ## 后续版本演示
+[![项目演示](https://javaai45.oss-cn-beijing.aliyuncs.com/xxx.jpg)](https://javaai45.oss-cn-beijing.aliyuncs.com/xxx.mp4)
