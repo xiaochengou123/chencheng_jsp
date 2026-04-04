@@ -113,4 +113,5 @@
 
    ## 后续版本演示
    ## 后续版本演示
-[![项目演示](https://javaai45.oss-cn-beijing.aliyuncs.com/xxx.jpg)](https://javaai45.oss-cn-beijing.aliyuncs.com/xxx.mp4)
+[![项目演示](https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.png)]
+(https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.0.mp4)
