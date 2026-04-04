@@ -68,6 +68,6 @@ public class EmailUtils {
     }
 
     public static void main(String[] args) throws GeneralSecurityException {
-        System.out.println(EmailUtils.sendVerificationCode("205614780@qq.com"));
+        System.out.println(EmailUtils.sendVerificationCode("你的邮箱"));
     }
 }
