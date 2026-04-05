@@ -23,49 +23,55 @@
 
 
 ### 注册
+---
 <img src="img/注册.jpeg" width="800px" />
 
----
+
 
 ### 首页
+---
 <img src="img/首页.jpg" width="800px" />
 
----
 
 ### 喜欢
+---
 <img src="img/喜欢.jpg" width="800px" />
 
----
+
 
 ### 歌手分类
+---
 <img src="img/歌手分类.jpg" width="800px" />
 
----
+
 
 ### 歌手详情
+---
 <img src="img/歌手详情页.jpg" width="800px" />
 
----
+
 
 ### —听ai
+---
 <img src="img/ai.jpg" width="800px" />
 
----
+
 
 ### 播放
 <img src="img/播放器.jpg" width="800px" />
 
----
+
 
 ### 歌单详情
+---
 <img src="img/Snipaste_2026-04-03_13-34-24.png" width="800px" />
 
 ---
 
 ### 数据库ER图（实体-关系图）
+---
 <img src="img/er图.jpg" width="800px" />
 
----
 ## 使用方法
 ### 1. 搭建运行环境，安装 JDK、Tomcat 和 MySQL，创建数据库并执行项目中的 SQL 脚本初始化数据表。
 ####  环境要求
