@@ -16,7 +16,7 @@
 | **测试用户** | `yt_xc` | `yt_music_123456` |
 
 ### 登入
-<img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143311_2_79.jpg" width="800px" />
+<img src="../img/登入.jpg" width="800px" />
 
 ### 注册
 <img src="https://javaai45.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260402143310_1_79.jpg" width="800px"/>
