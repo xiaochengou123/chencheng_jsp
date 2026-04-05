@@ -141,7 +141,7 @@
 [![有趣的版本,晨会网](img/chw.png)](https://xiaochengou123.github.io/chw/)
 
 
-[![[有趣的版本,个人介绍](img/xiao.png)](https://xiaochengou123.github.io/xiaochengou123.gihub.com/index.html)
+[![有趣的版本,个人介绍](img/xiao.png)](https://xiaochengou123.github.io/xiaochengou123.gihub.com/index.html)
 
 ## 后续版本演示
 > **注意:点击图片,即可进入视频入口，下载并播放,很抱歉githua不支持在线播放**
