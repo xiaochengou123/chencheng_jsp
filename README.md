@@ -136,7 +136,16 @@
    
 > **[http://localhost:8080/你的项目名/Player.jsp](http://localhost:8080/你的项目名/Player.jsp)**
 ---
+## 上线有趣的版本
+> **注意:点击图片,即可体验效果**
+[![有趣的版本,晨会网](img/chw.png)](https://xiaochengou123.github.io/chw/)
+
+
+[![[有趣的版本,个人介绍](img/xiao.png)](https://xiaochengou123.github.io/xiaochengou123.gihub.com/index.html)
 
 ## 后续版本演示
 > **注意:点击图片,即可进入视频入口，下载并播放,很抱歉githua不支持在线播放**
 [![项目演示](img/版本2.0.png)](img/版本2.0.mp4)
+
+
+
