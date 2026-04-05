@@ -40,7 +40,7 @@
 <img src="img/播放器.jpg" width="800px" />
 
 ### 歌单详情
-<img src="img/img/Snipaste_2026-04-03_13-34-24.png" width="800px" />
+<img src="img/Snipaste_2026-04-03_13-34-24.png" width="800px" />
 
 ### 数据库ER图（实体-关系图）
 <img src="img/er图.jpg" width="800px" />
