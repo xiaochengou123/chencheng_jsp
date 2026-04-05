@@ -18,7 +18,9 @@
 
 ### 登入
 <img src="img/登入.jpg" width="800px" />
---
+
+<hr>
+
 ### 注册
 <img src="img/注册.jpeg" width="800px" />
 
