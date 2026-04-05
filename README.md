@@ -107,7 +107,7 @@
 3. **访问项目**：
    打开浏览器，访问以下地址（端口号请根据您的 Tomcat 配置调整）：
    
-   [http://localhost:8080/你的项目名/Player.jsp](http://localhost:8080/你的项目名/Player.jsp)
+> **[http://localhost:8080/你的项目名/Player.jsp](http://localhost:8080/你的项目名/Player.jsp)**
 
 ## 后续版本演示
-[![项目演示](https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.png)](https://javaai45.oss-cn-beijing.aliyuncs.com/%E7%89%88%E6%9C%AC2.0.mp4)
+[![项目演示](img/版本2.0.png)](img/版本2.0.mp4)
