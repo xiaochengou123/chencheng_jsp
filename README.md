@@ -17,9 +17,10 @@
 | **测试用户** | `yt_xc` | `yt_music_123456` |
 
 ### 登入
+---
 <img src="img/登入.jpg" width="800px" />
 
----
+
 
 ### 注册
 <img src="img/注册.jpeg" width="800px" />
